@@ -1,0 +1,46 @@
+/* src/components/Navbar.css */
+
+/* Full-width fixed navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40; /* Bootstrap's dark color */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  }
+  
+  .navbar .container-fluid {
+    padding: 0; /* Remove container padding */
+  }
+  
+  .navbar-nav {
+    margin: 0; /* Remove default margin */
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #adb5bd; /* Light grey color on hover */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove border from toggler */
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23fff" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E');
+  }
+ 
+
+/* In Navbar.css */
+.dropdown-background {
+    background-color: gray !important; /* Force background color */
+  }
+  
+
+  
