@@ -1,9 +1,9 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import '../../App.css';
 import womensWearImages from './womens_wear_images.json';
 
 const Traditional_womens_Wear = () => {
+
   const [images, setImages] = useState([]);
   const [error, setError] = useState(null);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -26,16 +26,15 @@ const Traditional_womens_Wear = () => {
   }, []);
 
   const handleImageClick = (image, e) => {
-    // Check if it's a double click
     if (e.detail === 2) {
-      setSelectedImage(null); // Exit fullscreen on double-click
+      setSelectedImage(null);
     } else {
-      setSelectedImage(image); // Set the clicked image as the selected image
+      setSelectedImage(image);
     }
   };
 
   const handleCloseFullscreen = () => {
-    setSelectedImage(null); // Clear the selected image to exit fullscreen
+    setSelectedImage(null);
   };
 
   return (
@@ -75,16 +74,3 @@ const Traditional_womens_Wear = () => {
 };
 
 export default Traditional_womens_Wear;
-=======
-import React from 'react'
-
-const Traditional_Womens_Wear = () => {
-  return (
-    <div><h1>womens wearr</h1>
-      
-    </div>
-  )
-}
-
-export default Traditional_Womens_Wear;
->>>>>>> origin/master
