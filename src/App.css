@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Root container styling */
 #root {
   margin: 0 auto;
@@ -137,3 +138,115 @@
   max-height: 90vh; /* Ensure image does not exceed viewport height */
   object-fit: contain; /* Ensure the image maintains its aspect ratio */
 }
+=======
+#root {
+  margin: 0 auto;
+   text-align: left;
+   position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+ }
+ 
+ .logo {
+   height: 6em;
+   padding: 1.5em;
+   will-change: filter;
+   transition: filter 300ms;
+ }
+ .logo:hover {
+   filter: drop-shadow(0 0 2em #646cffaa);
+ }
+ .logo.react:hover {
+   filter: drop-shadow(0 0 2em #61dafbaa);
+ }
+ 
+ @keyframes logo-spin {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }
+ 
+ @media (prefers-reduced-motion: no-preference) {
+   a:nth-of-type(2) .logo {
+     animation: logo-spin infinite 20s linear;
+   }
+ }
+ 
+ .card {
+   padding: 2em;
+ }
+ 
+ .read-the-docs {
+   color: #888;
+ }
+ 
+ .headingStyle {
+   margin-top: -350px; /* Adjust this value to move the text up or down */
+   color: black; /* Ensure text color is visible over the background */
+   font-size: 2.5em; /* Adjust font size as needed */
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for better visibility */
+   font-family: Serif, Georgia; 
+   font-style: italic;
+ }
+ .highlight {
+   color: #e74c3c; /* Color for H&M text */
+   font-weight: bold; /* Optional: Make the H&M text bold */
+   font-size: 2.5em; /* Optional: Adjust font size for H&M text */
+ }
+ .image-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px; /* Adjust as needed */
+ }
+ 
+ .image-item {
+   flex: 1 1 calc(33.333% - 20px); /* Adjust as needed for spacing */
+   box-sizing: border-box;
+   position: relative;
+ }
+ 
+ .image {
+   width: 100%;
+   height: auto;
+ }
+ 
+ .image-actions {
+   margin-top: 10px;
+   text-align: center;
+ }
+ 
+ .image-actions input {
+   margin-top: 5px;
+   width: calc(100% - 20px); /* Adjust as needed */
+ }
+ 
+ .image-actions ul {
+   list-style-type: none;
+   padding: 0;
+ }
+ /* App.css or your component-specific CSS file */
+ /* App.css */
+ .image-gallery {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px; /* Space between images */
+   overflow-y: auto; /* Enable scrolling if needed */
+   max-height: 80vh; /* Adjust as needed */
+ }
+ 
+ .image-card {
+   flex: 1 1 calc(33.333% - 20px); /* Adjust to show 3 images per row */
+   box-sizing: border-box;
+ }
+ 
+ .image {
+   width: 100%;
+   height: auto;
+   display: block;
+ }
+ 
+>>>>>>> origin/master

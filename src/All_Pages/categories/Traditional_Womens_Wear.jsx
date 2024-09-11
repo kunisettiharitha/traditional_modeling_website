@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import '../../App.css';
 import womensWearImages from './womens_wear_images.json';
@@ -74,3 +75,16 @@ const Traditional_womens_Wear = () => {
 };
 
 export default Traditional_womens_Wear;
+=======
+import React from 'react'
+
+const Traditional_Womens_Wear = () => {
+  return (
+    <div><h1>womens wearr</h1>
+      
+    </div>
+  )
+}
+
+export default Traditional_Womens_Wear;
+>>>>>>> origin/master
