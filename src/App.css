@@ -1,0 +1,139 @@
+/* Root container styling */
+#root {
+  margin: 0 auto;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Logo styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card styling */
+.card {
+  padding: 2em;
+}
+
+/* Read the docs link styling */
+.read-the-docs {
+  color: #888;
+}
+
+/* Heading styling */
+.headingStyle {
+  margin-top: -350px; /* Adjust this value to move the text up or down */
+  color: black; /* Ensure text color is visible over the background */
+  font-size: 2.5em; /* Adjust font size as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add text shadow for better visibility */
+  font-family: Serif, Georgia; 
+  font-style: italic;
+}
+
+/* Highlight styling */
+.highlight {
+  color: #e74c3c; /* Color for highlighted text */
+  font-weight: bold; /* Make text bold */
+  font-size: 2.5em; /* Adjust font size for highlighted text */
+}
+
+/* Image gallery styling */
+/* Container for the image gallery */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+  gap: 16px; /* Space between images */
+  overflow-y: auto; /* Enable scrolling if needed */
+  max-height: 80vh; /* Adjust as needed */
+  position: relative; /* Position context for fullscreen overlay */
+}
+
+/* Container for each image card */
+.image-card {
+  position: relative;
+  overflow: hidden; /* Hide overflow to maintain image size */
+  border: 1px solid #ddd; /* Optional: add a border */
+  border-radius: 8px; /* Optional: add rounded corners */
+  background-color: #f9f9f9; /* Optional: add a background color */
+  aspect-ratio: 1 / 1; /* Maintain a square aspect ratio */
+  cursor: pointer; /* Show pointer cursor on hover to indicate clickable items */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Style for the image */
+.image {
+  width: 100%; /* Make image take up full width of the card */
+  height: 100%; /* Make image take up full height of the card */
+  object-fit: cover; /* Cover the entire area of the card, cropping if necessary */
+  display: block; /* Ensure images are block elements to prevent inline spacing issues */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for enlarging the image */
+.image-card:hover .image {
+  transform: scale(1.1); /* Slightly enlarge the image on hover */
+}
+
+/* Fullscreen effect for clicked image */
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain; /* Ensure the image is contained within the viewport */
+  z-index: 1000; /* Ensure the image is on top */
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background to highlight fullscreen image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Fullscreen overlay styling */
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the overlay is on top */
+  cursor: pointer; /* Show pointer cursor on overlay */
+}
+
+/* Enlarged image effect in fullscreen mode */
+.fullscreen-image {
+  max-width: 90vw; /* Ensure image does not exceed viewport width */
+  max-height: 90vh; /* Ensure image does not exceed viewport height */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
